@@ -32,6 +32,7 @@ config = {
 }
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 l = []
 l.append(
@@ -136,4 +137,4 @@ for i, state in enumerate(states):
     app.callback(hover_output[state])(update)
 
 if __name__ == "__main__":
-    app.run_server(debug=False)
+    app.run_server(debug=True)

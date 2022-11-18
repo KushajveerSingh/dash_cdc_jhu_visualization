@@ -5,3 +5,5 @@ dash-bootstrap-components
 plotly
 tqdm
 requests
+wheel
+gunicorn
